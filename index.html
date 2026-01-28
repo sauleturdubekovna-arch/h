@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #ffd1fd;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    border-radius: 6px;
+    border: 1px solid #000000;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #b375a5;
+    color: #fff;
+}
+
+button:hover {
+    background: #333;
+}
+
+.gallery {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+    </style>
+    <input type="text" id="photo_name">
+    <button onclick="get()">Get Photos</button>
+    <script src="./script.js"></script>
+</body>
+</html>
